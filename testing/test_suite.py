@@ -287,17 +287,17 @@ class TestTrueAccordTestCode(unittest.TestCase):
             "payment_plan_id": 2
           },
           {
-            "amount": 1230.085,
+            "amount": 1230.0,
             "date": "2020-08-01",
             "payment_plan_id": 3
           },
           {
-            "amount": 1230.085,
-            "date": "2020-08-08",
+            "amount": 0.08,
+            "date": "2020-08-05",
             "payment_plan_id": 3
           },
           {
-            "amount": 1230.085,
+            "amount": 1230.08,
             "date": "2020-08-15",
             "payment_plan_id": 3
           }

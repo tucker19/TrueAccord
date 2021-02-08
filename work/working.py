@@ -9,7 +9,7 @@ import urllib.request, json
 
 def print_data(data):
     for anything in data:
-        print(anything)
+        print(json.dumps(anything, indent=4))
         
 def next_payment(debt_data_dict, payment_plan_data_dict, payment_data_dict):
     for debt_data in debt_data_dict:
@@ -76,10 +76,10 @@ def main(debt_url, payment_plan_url, payments_url):
     debt_data = next_payment(debt_data, payment_plan_data, payments_data)
     print_data(debt_data)
     
-    print(payment_plan_data)
-    print(payments_data)
+    print(json.dumps(payment_plan_data, indent=4))
+    print(json.dumps(payments_data, indent=4))
     
     
-#main("https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/debts", 
-#     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payment_plans", 
-#     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payments")
+main("https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/debts", 
+     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payment_plans", 
+     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payments")

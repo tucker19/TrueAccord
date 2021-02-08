@@ -80,6 +80,6 @@ def main(debt_url, payment_plan_url, payments_url):
     print(json.dumps(payments_data, indent=4))
     
     
-main("https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/debts", 
-     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payment_plans", 
-     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payments")
+#main("https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/debts", 
+#     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payment_plans", 
+#     "https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/payments")

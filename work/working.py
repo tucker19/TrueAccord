@@ -58,19 +58,9 @@ def main(debt_url, payment_plan_url, payments_url):
     payment_plan_data = get_data(payment_plan_url)
     payments_data = get_data(payments_url)
     
-    print('Debts Table:')
     debt_data = is_associated_with_payment_plan(debt_data, payment_plan_data)
     debt_data = next_payment(debt_data, payment_plan_data)
     print_data(debt_data)
-    
-    print()
-    print('Payment Plans Table:')
-    print_data(payment_plan_data)
-    #next_payment(payment_plan_data)
-    
-    print()
-    print('Payments Table:')
-    print_data(payments_data)
     
     
 #main("https://my-json-server.typicode.com/druska/trueaccord-mock-payments-api/debts", 
